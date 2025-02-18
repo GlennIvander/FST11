@@ -53,3 +53,15 @@ git merge branch name
 
 -delete branch
 git branch -d branch name
+
+- Add a remote tp local repository
+git remote and origin (repository URL)
+
+- Set branch to main
+git branch -M main
+
+- Push local repository to remote repository
+git push -u origin main
+
+- Confirm connection to remote repository
+git remove -v
