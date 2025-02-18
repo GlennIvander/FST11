@@ -1,0 +1,17 @@
+- Initialize a repository
+git init 
+
+- Configure the username in git
+git config user.name "GitHub Username"
+
+- Configure the email in git
+git config user.email "GitHub Email"
+
+- Check configured username in git
+git config user.name
+
+- Check configured email in git
+git config user.email
+
+- Check the status of change in files/folders
+git status
