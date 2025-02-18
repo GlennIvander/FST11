@@ -47,3 +47,9 @@ git branch a
 -Switch to a different branch
 git switch "branch name: Note: May not work for older versions
 git checkout "branch name"
+
+-merge feature branch to master.main branch
+git merge branch name
+
+-delete branch
+git branch -d branch name
