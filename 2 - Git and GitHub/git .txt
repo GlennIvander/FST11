@@ -34,3 +34,7 @@ git log
 
 - Show commit history (summarized)
 git log --oneline
+
+-Clear terminal commands
+clear
+
