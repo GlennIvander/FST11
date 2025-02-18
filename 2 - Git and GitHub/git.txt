@@ -38,3 +38,12 @@ git log --oneline
 -Clear terminal commands
 clear
 
+-Create branch
+git branch "branch name"
+
+-List all branches
+git branch a
+
+-Switch to a different branch
+git switch "branch name: Note: May not work for older versions
+git checkout "branch name"
