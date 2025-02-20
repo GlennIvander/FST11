@@ -1,0 +1,103 @@
+#text-styling {
+  font-family: "Arial", sans-serif;
+
+  /* FONT WEIGHT */
+  font-weight: normal; /* Default */
+  font-weight: bold;
+  font-weight: lighter;
+  font-weight: bolder;
+
+  /* FONT WEIGHT - Numeric Values */
+  font-weight: 100;
+  font-weight: 200;
+  font-weight: 500;
+  font-weight: 600;
+  font-weight: 700;
+  font-weight: 800;
+  font-weight: 900;
+  font-weight: 950;
+  font-weight: 400; /* Default */
+  font-weight: 300;
+
+  /* FONT STYLE */
+  font-style: normal; /* Default */
+  font-style: italic;
+  font-style: oblique;
+
+  /* TEXT ALIGN */
+  text-align: left; /* Default */
+  text-align: right;
+  text-align: justify;
+  text-align: center;
+
+  /* LINE HEIGHT */
+  line-height: normal; /* Default */
+  line-height: 1.5;
+  line-height: 40%;
+  line-height: 16px;
+
+  /* Letter Spacing */
+  letter-spacing: normal; /* Default */
+  letter-spacing: -8px;
+  letter-spacing: 8px;
+}
+
+#text-decoration {
+  /* Text Decoration Line */
+  text-decoration-line: none; /* Default */
+  text-decoration-line: line-through;
+  text-decoration-line: underline;
+  text-decoration-line: overline;
+
+  /* Text Decoration Style */
+  text-decoration-style: solid; /* Default */
+  text-decoration-style: dashed;
+  text-decoration-style: dotted;
+  text-decoration-style: wavy;
+
+  /* Text Decoration Color */
+  text-decoration-color: royalblue;
+
+  /* Text Decoration Thickness */
+  text-decoration-thickness: 5px;
+
+  /* Text Decoration */
+  text-decoration: overline underline line-through;
+  text-decoration: overline dotted red 2px;
+}
+
+#colors {
+  /* Colors */
+
+  /* Color Names */
+  color: white;
+  background-color: blue;
+
+  /* RGBA */
+  /* red, green, blue, alpha */
+  /* 0 - Lowest, 255 - Highest */
+  /* Alpha - Opacity */
+  /* 1 - Opaque, 0 - Transparency */
+  /* (0, 0, 0, 0) */
+  color: rgb(0, 255, 255);
+  background-color: rgba(255, 0, 0, 1);
+
+  /* Hexadecimal */
+  /* 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 */
+  /* A - 10, B - 11, C - 12, D - 13, E -14, F - 15 */
+  /* #000000 */
+  color: #00ff00;
+  background-color: #0000ffff;
+}
+
+#absolute-unit-px{
+  font-size: 50px;
+}
+
+#relative-unit-em{
+  font-size: 2em;
+}
+
+#relative-unit-rem{
+  font-size: 2rem;
+}

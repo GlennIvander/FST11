@@ -1,0 +1,44 @@
+/* Element Selector */
+span {
+  color: blue;
+  font-size: 20px;
+}
+
+/* Class Selector */
+.intro-paragraphs{
+  color: red;
+  font-size: 25px;
+}
+
+/* ID Selector */
+#main-heading{
+  color: blue;
+  font-size: 10px;
+}
+
+/* Universal Selector */
+*{
+  font-weight: lighter;
+}
+
+/* Grouping Selector */
+h1, h2, .about-content {
+  text-decoration: underline black;
+}
+
+/* Descendant Selector */
+.article-container p{
+  background-color: violet;
+}
+
+a:hover {
+  color: pink;
+}
+
+a:active {
+  background-color: black;
+}
+
+a:visited {
+  color: green;
+}
