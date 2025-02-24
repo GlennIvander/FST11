@@ -1,0 +1,39 @@
+/* Relative to its original position */
+#relative{
+  background-color: purple;
+  color: white;
+  position: relative;
+  /* Access: top, left, bottom, right */
+  top: 10px;
+  left: 30px;
+}
+
+/* Relative to the parent container, has a position that is not static */
+#absolute{
+  background-color: blue;
+  color: white;
+  position: absolute;
+  /* Access: top, left, bottom, right */
+  top: 0px;
+  left: 0px;
+}
+
+/* Relative to the viewport */
+/* Stay on the same place even when you scroll */
+#fixed{
+  background-color: red;
+  color: white;
+  position: fixed;
+  /* Access: top, left, bottom, right */
+  bottom: 0px;
+  left: 0px;
+}
+
+/* Starts relative to its original position */
+/* However, past a certain point, it will be fixed position */
+#sticky{
+  background-color: pink;
+  position: sticky;
+  /* Access: top, left, bottom, right */
+  top: 30px;
+}
