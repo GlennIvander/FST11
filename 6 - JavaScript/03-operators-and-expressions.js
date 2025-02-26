@@ -90,10 +90,18 @@ console.log("The new value of num3 is:", num3);
 
 // Division Assignment "/="
 num3 /= num4
-// Computation: 50 - 5
+// Computation: 50 / 5
 // num3 = num3 - num4
 console.log("The new value of num3 is:", num3);
 
 //Exponent Assignment
+num3 **= num4
+// Computation: 10 ** 5
+// num3 = num3 - num4
+console.log("The new value of num3 is:", num3);
 
 //Remainder Assignment
+num3 %= num4
+// Computation: 100000 % 5
+// num3 = num3 - num4
+console.log("The new value of num3 is:", num3);
