@@ -16,7 +16,7 @@ function addTodo(e) {
 
   // Create the todoDiv container
   const todoDiv = document.createElement("div");
-  todoDiv.classList.add('todo');
+  todoDiv.classList.add("todo");
 
   // Create a new todoList item
   const newTodo = document.createElement("li");
@@ -37,27 +37,54 @@ function addTodo(e) {
   todoDiv.appendChild(trashButton);
 
   // Append the todo div to the todo list
-  todoList.appendChild(todoDiv)
+  todoList.appendChild(todoDiv);
   todoInput.value = "";
 }
 
 // Step 4: function to delete or complete task
 function deleteOrCompleteTodo(e) {
-  const targetBtn = e.target
+  const targetBtn = e.target;
 
   if (targetBtn.classList.contains("trash-btn")) {
     const todoDiv = targetBtn.parentElement;
     todoDiv.classList.add("fall");
     todoDiv.addEventListener("transitionend", function () {
       todoDiv.remove();
-    })
-  };
+    });
+  }
 
   if (targetBtn.classList.contains("complete-btn")) {
     const todoDiv = targetBtn.parentElement;
     todoDiv.classList.toggle("completed");
-  };
-};
+  }
+}
 
-// Step 5: function to filter based on completion status
-function filterTodos(e) {}
+// Step 5: Function to filter task based on completion status
+function filterTodos(e) {
+  const todos = todoList.childNodes
+  todos.forEach(function (todo) {
+    const filterValue = e.target.value
+    if (filterValue === "all") {
+      // Show all of the tasks
+    } else if (filterValue === "completed") {
+      // Show completed tasks
+      // Hide uncompleted tasks
+      if (todo.classList.contains("completed")) {
+        todo.style.display = "flex";
+      } else {
+        // Hide uncompleted tasks
+        todo.style.display = "none";
+      }
+    } else if (filterValue === "uncompleted") {
+      // Show uncompleted tasks
+      // Hide the completed tasks
+    }
+    // Show uncompleted tasks
+    if (!todo.classList.contains("completed")) {
+      todo.style.display = "flex";
+    } else {
+      // Hide the completed tasks
+      todo.style.display = "none";
+    }
+  })
+}
